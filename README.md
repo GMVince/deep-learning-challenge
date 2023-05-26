@@ -1,5 +1,5 @@
 # deep-learning-challenge
-
+![neural](/images/neural_network_%20image.jpg)
 ## Step 1: Preprocess the Data
 
   1. Read in the charity_data.csv to a Pandas DataFrame, and be sure to identify the following in your dataset:
@@ -49,10 +49,12 @@ Using your knowledge of TensorFlow, optimize your model to achieve a target pred
 Use any or all of the following methods to optimize your model:
 
   *  Adjust the input data to ensure that no variables or outliers are causing confusion in the model, such as:
-    *  Dropping more or fewer columns.
+   # Dropping more or fewer columns.
+![drops](/images/columnsToDrop.png)
     *  Creating more bins for rare occurrences in columns.
     *  Increasing or decreasing the number of values for each bin.
-    *  Add more neurons to a hidden layer.
+   # Add more neurons to a hidden layer.
+![drops](/images/model.png)
     *  Add more hidden layers.
     *  Use different activation functions for the hidden layers.
     *  Add or reduce the number of epochs to the training regimen.
@@ -74,7 +76,7 @@ Note: If you make at least three attempts at optimizing your model, you will not
 The initial model gave a less than 73% accuracy return. I removed the Status column and Special Considerations columns.  I did not remove the Name column for the new model.  I used the same targets and features in the new model but I modified the layer activations for the Classification and Application Type columns.  I added a third hidden layer and increased the number of neural nodes.  I had to subscribe to ColabPro to be able to process the new model.  The accuracy of the new model was increased to 76.24%.
 We could use a random forrest classifier to further improve our accuracy or increase the neural nodes.
 
-
+![drops](/images/newAccuracy.png)
       
  ##   References
   1. IRS. Tax Exempt Organization Search Bulk Data Downloads. https://www.irs.gov/Links to an external site.

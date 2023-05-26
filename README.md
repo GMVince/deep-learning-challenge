@@ -70,33 +70,13 @@ Note: If you make at least three attempts at optimizing your model, you will not
   5. Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity_Optimization.h5.
  
 ## Step 4: Write a Report on the Neural Network Model
-For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
 
-The report should contain the following:
-
-  1. Overview of the analysis: Explain the purpose of this analysis.
-
-  2. Results: Using bulleted lists and images to support your answers, address the following questions:
-
-  *  Data Preprocessing
-      *  What variable(s) are the target(s) for your model?
-      *  What variable(s) are the features for your model?
-      *  What variable(s) should be removed from the input data because they are neither targets nor features?
+The initial model gave a less than 73% accuracy return. I removed the Status column and Special Considerations columns.  I did not remove the Name column for the new model.  I used the same targets and features in the new model but I modified the layer activations for the Classification and Application Type columns.  I added a third hidden layer and increased the number of neural nodes.  I had to subscribe to ColabPro to be able to process the new model.  The accuracy of the new model was increased to 76.24%.
+We could use a random forrest classifier to further improve our accuracy or increase the neural nodes.
 
 
-
-
-  *  Compiling, Training, and Evaluating the Model
-    *  How many neurons, layers, and activation functions did you select for your neural network model, and why?
-    *  Were you able to achieve the target model performance?
-    *  What steps did you take in your attempts to increase model performance?
-
-
-
-
-  3. ## Summary: 
-      Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
       
  ##   References
   1. IRS. Tax Exempt Organization Search Bulk Data Downloads. https://www.irs.gov/Links to an external site.
-
+  2. Colab Pro to process more data https://colab.research.google.com
+  3. Microsoft Bing for pics https://www.bing.com/images/create/neural-network-models/6470bd67ddbe41be954a9d607024fc8a?FORM=GENCRE
